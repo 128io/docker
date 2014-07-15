@@ -12,7 +12,8 @@ fi
 
 docker run -d \
     --name $CONTAINER_LEMP \
-    --volume $DIR_SITE_RSS:/sites/rss-redelivered \
+    --volume $DIR_SITE_RSS_REDELIVERED:/sites/rss-redelivered \
+    --volume $DIR_SITE_DOMAIN_TRACKER:/sites/domain-tracker \
     --publish 80:80 \
     --publish 3306:3306 \
     128io/lemp
