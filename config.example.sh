@@ -16,6 +16,9 @@ DIR_SITE_RSS_REDELIVERED=$(cd ~/128io-data/sites/rss-redelivered && pwd)
 DIR_LOGS_DOMAIN_TRACKER=$(cd ~/128io-data/logs/domain-tracker && pwd)
 DIR_SITE_DOMAIN_TRACKER=$(cd ~/128io-data/sites/domain-tracker && pwd)
 
+DIR_LOGS_PHPMYADMIN=$(cd ~/128io-data/logs/phpmyadmin && pwd)
+DIR_SITE_PHPMYADMIN=$(cd ~/128io-data/sites/phpmyadmin && pwd)
+
 ##
 # Container Names
 ##
