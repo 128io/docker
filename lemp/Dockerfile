@@ -1,8 +1,13 @@
 FROM ubuntu:14.04
 MAINTAINER a@128.io
 
+RUN apt-get update
+
 # Services used by this container
-RUN apt-get update && apt-get install -y php5-fpm php5-cli nginx-light php5-intl php5-mcrypt
+RUN apt-get install -y nginx-light 
+RUN apt-get install -y php5-fpm php5-cli php5-intl php5-mcrypt php5-mysqlnd
+
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y mysql-server-5.6
 
 # Utilities used when debugging
 RUN apt-get install -y htop nano
